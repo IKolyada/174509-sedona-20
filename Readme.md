@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Инна Коляда](https://up.htmlacademy.ru/adaptive/20/user/174509).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Шрамко] (https://htmlacademy.ru/profile/id852139).
 
 ---
 
