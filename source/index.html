@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <button class="main-nav__button-close button-close visually-hidden">Закрыть</button>
+        <ul class="main-nav__list menu">
+          <li class="menu__item"><a href="index.html">Главная</a></li>
+          <li class="menu__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="menu__item"><a href="form.html">Форма Отзыва</a></li>
+          <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+      <a class="main-nav__logo"><img src="https://via.placeholder.com/102x84" width="102" height="84"
+          alt="Логотип Седона"></a>
+      <button class="main-nav__show-menu burger-menu" aria-label="Открыть меню"></button>
+    </nav>
+    <section class="page-header__hero hero hero_index">
+      <h1 class="visually-hidden">Выберите гостиницу в Седоне на нашем сайте</h1>
+      <img class="hero__content" src="https://via.placeholder.com/282x214" width="282" height="214"
+        alt="Добро пожаловать в Седону">
+    </section>
+  </header>
+
+  <main class="page-content">
+
+    <p class="page-content__title title">СЕДОНА — небольшой  городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!  </p>
+    <p class="page-content__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+    <section class="advantages">
+
+      <dl class="advantages__card advantage-sight">
+        <dt class="title advantage-sight__title">НАСТОЯЩИЙ ГОРОДОК</dt>
+        <dd class="text advantage-sight__text"><span class="card__number">№1</span>  СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,
+          ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</dd>
+      </dl>
+
+      <img class="advatages__img-right" src="https://via.placeholder.com/520x260" width="520" height="260"
+        alt="Фотография - вид на город">
+
+      <dl class="advantages__card advantage-feature">
+        <dt class="title advantage-feature__title advantage-feature__title_apartment">Жилье  </dt>
+        <dd class="text advantage-feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
+      </dl>
+
+      <dl class="advantages__card advantage-feature">
+        <dt class="title advantage-feature__title advantage-feature__title_souvenir">СУВЕНИРЫ  </dt>
+        <dd class="text advantage-feature__text">Не только китайского, но и местного производства!</dd>
+      </dl>
+
+      <dl class="advantages__card advantage-feature">
+        <dt class="title advantage-feature__title advantage-feature__title_food">ЕДА  </dt>
+        <dd class="text advantage-feature__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!  </dd>
+      </dl>
+
+      <dl class="advantages__card advantage-sight">
+        <dt class="title advantage-sight__title">ТАМ ЕСТЬ Мост дьявола  </dt>
+        <dd class="text advantage-sight__text"><span class="card__number">№2</span>  Да, по нему можно пройти! Если вы
+          осмелитесь, конечно</dd>
+      </dl>
+
+      <img class="advatages__img-left" src="https://via.placeholder.com/520x260" width="520" height="260"
+        alt="Фотография - вид на каньон">
+
+      <dl class="advantages__card card">
+        <dt class="title">НЕБОЛЬШАЯ ПЛОЩАДЬ</dt>
+        <dd class="text">  <span class="card__number">№3</span>ВСЕ интересные места находятся очень близко  </dd>
+      </dl>
+
+      <dl class="advantages__card card">
+        <dt class="title">КРАСИВАЯ ДОРОГА</dt>
+        <dd class="text">  <span class="card__number">№4</span>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА  совсем НЕ СКУЧНО!  </dd>
+      </dl>
+
+      <dl class="advantages__card card">
+        <dt class="title">МАЛО ТУРИСТОВ   </dt>
+        <dd class="text">  <span class="card__number">№5</span>Большинство едет в гранд каньон  и толпится там  </dd>
+      </dl>
+
+    </section>
+
+    <!-- Здесь будет блок с кнопкой поиска гостиницы и картой-->
+
+  </main>
+
+  <footer class="page-footer">
+
+    <p class="page-footer__call-to-action call-to-action">#visitSEDONA</p>
+
+    <section class="page-footer__socials socials">
+      <a class="socials__link" href=""><img src="https://via.placeholder.com/17x14" width="17" height="14"
+          alt="Наша страница в Twitter"></a>
+      <a class="socials__link" href=""><img src="https://via.placeholder.com/17x14" width="17" height="14"
+          alt="Наша страница в Facebook"></a>
+      <a class="socials__link" href=""><img src="https://via.placeholder.com/17x14" width="17" height="14"
+          alt="Наш канал в Youtube"></a>
+    </section>
+
+    <section class="page-footer__dev dev">
+      <p class="dev__text text">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="dev__logo-htmlacademy"><img
+          src="https://via.placeholder.com/27x34" alt="Логотип htmlacademy"></a>
+    </section>
+
+  </footer>
+
+</body>
+
 </html>
