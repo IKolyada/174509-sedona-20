@@ -10,17 +10,18 @@
 
   <header class="page-header">
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <button class="main-nav__button-close button-close visually-hidden">Закрыть</button>
+      <div class="main-nav__inner">
+        <button class="main-nav__close button-close">Закрыть</button>
         <ul class="main-nav__list menu">
-          <li class="menu__item"><a href="index.html">Главная</a></li>
-          <li class="menu__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="menu__item"><a href="form.html">Форма Отзыва</a></li>
-          <li class="menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="photo.html">Фото и видео</a></li>
+          <li class="menu__item"><a class="menu__link" href="form.html">Форма Отзыва</a></li>
+          <li class="menu__item"><a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
         </ul>
       </div>
-      <a href="index.html" class="main-nav__logo"><img src="https://via.placeholder.com/102x84" width="102" height="84"
-          alt="Логотип Седона"></a>
+      <a href="index.html" class="main-nav__logo">
+        <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седона">
+      </a>
       <button class="main-nav__show-menu burger-menu" aria-label="Открыть меню"></button>
     </nav>
     <section class="page-header__hero hero hero_index">
@@ -38,14 +39,14 @@
 
     <section class="gallery">
 
-      <figure class="gallery__photo gallery__photo_big photo">
+      <figure class="gallery__photo photo_big photo">
         <img src="https://via.placeholder.com/280x280" width="280" height="280" alt="Пейзаж Седоны">
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">неродные просторы</p>
-            <p class="photo__auth"> Автор фото: Борис</p>
+            <p class="photo__author"> Автор фото: Борис</p>
           </div>
-          <button class="button-like">1350</button>
+          <button class="photo__like">1350</button>
         </figcaption>
       </figure>
 
@@ -54,9 +55,9 @@
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">Местная растительность </p>
-            <p class="photo__auth"> Автор фото: Сергей</p>
+            <p class="photo__author"> Автор фото: Сергей</p>
           </div>
-          <button class="button-like">145</button>
+          <button class="photo__like">145</button>
         </figcaption>
       </figure>
 
@@ -65,9 +66,9 @@
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">Дорога на север  </p>
-            <p class="photo__auth"> Автор фото: Петр</p>
+            <p class="photo__author"> Автор фото: Петр</p>
           </div>
-          <button class="button-like">96</button>
+          <button class="photo__like">96</button>
         </figcaption>
       </figure>
 
@@ -76,14 +77,14 @@
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">Мост дьявола  </p>
-            <p class="photo__auth"> Автор фото: Антон</p>
+            <p class="photo__author"> Автор фото: Антон</p>
           </div>
-          <button class="button-like">254</button>
+          <button class="photo__like">254</button>
         </figcaption>
       </figure>
 
     </section>
-       
+
 
     <!-- Здесь будет блок с видео -->
 
@@ -91,7 +92,7 @@
 
   <footer class="page-footer">
 
-    <p class="page-footer__call-to-action call-to-action">#visitSEDONA</p>
+    <p class="page-footer__cta cta">#visitSEDONA</p>
 
     <section class="page-footer__socials socials">
       <a class="socials__link" href=""><img src="https://via.placeholder.com/17x14" width="17" height="14"
