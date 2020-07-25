@@ -11,18 +11,19 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__inner">
-        <button class="main-nav__close button-close visually-hidden">Закрыть</button>
+        <button type="button" class="main-nav__close button-close visually-hidden">Закрыть</button>
         <ul class="main-nav__list menu">
           <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
           <li class="menu__item"><a class="menu__link" href="photo.html">Фото и видео</a></li>
           <li class="menu__item"><a class="menu__link" href="form.html">Форма Отзыва</a></li>
-          <li class="menu__item"><a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          <li class="menu__item"><a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
         </ul>
       </div>
       <a href="index.html" class="main-nav__logo">
         <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седона">
       </a>
-      <button class="main-nav__show-menu burger-menu" aria-label="Открыть меню"></button>
+      <button type="menu" class="main-nav__show-menu burger-menu" aria-label="Открыть меню"></button>
     </nav>
     <section class="page-header__hero hero hero_index">
       <h1 class="visually-hidden">Отзывы о посещении Седоны</h1>
@@ -32,10 +33,92 @@
   </header>
 
   <main class="page-content">
-<p class="page-content__title title">Оставьте свой отзыв</p>
-<p class="page-content__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
-    <!-- Здесь будет форма отзыва -->
+    <p class="page-content__title title">Оставьте свой отзыв</p>
+    <p class="page-content__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+      вами достопримечательностях</p>
+
+    <form class="page-content__form feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+
+      <fieldset class="feedback-form__fieldset fieldset fieldset-name">
+
+        <legend class="fieldset__legend legend">Представьтесь:</legend>
+
+        <label class="fieldset-name__label text" for="name">ИМЯ*:</label>
+        <input class="fieldset-name__input field form-text" type="text" id="name" name="name" placeholder="Петр"
+          required>
+
+        <label class="fieldset-name__label text" for="surname">Фамилия*:</label>
+        <input class="fieldset-name__input field form-text" type="text" id="surname" name="name" placeholder="Иванов"
+          required>
+
+        <label class="fieldset-name__label text" for="patronymic">Отчество*:</label>
+        <input class="fieldset-name__input field form-text" type="text" id="patronymic" name="name"
+          placeholder="Александрович">
+
+      </fieldset>
+
+      <fieldset class="feedback-form__fieldset fieldset fieldset-contact">
+
+        <legend class="fieldset__legend legend legend_separator">Контактная информация:</legend>
+
+        <label class="fieldset-contact__label text" for="phone">Контактный телефон*:</label>
+        <input class="fieldset-contact__input field form-text field_phone" type="tel" id="phone" name="phone"
+          placeholder="Введите телефон" required>
+
+        <label class="fieldset-contact__label text" for="email">Электронная почта*:</label>
+        <input class="fieldset-contact__input field form-text field_email" type="email" id="email" name="email"
+          placeholder="Введите e-mail" required>
+
+      </fieldset>
+
+      <fieldset class="feedback-form__fieldset fieldset fieldset-impression">
+
+        <legend class="fieldset__legend legend">ВАше Общее впечатление:</legend>
+
+        <input class="visually-hidden" type="radio" name="impression" value="great" id="great" checked>
+        <label tabindex="0" class="form-text fieldset-impression__label" for="great">Скорее положительное</label>
+
+        <input class="visually-hidden" type="radio" name="impression" value="bad" id="bad">
+        <label tabindex="0" class="form-text fieldset-impression__label" for="bad">Скорее отрицательное</label>
+
+        <input class="visually-hidden" type="radio" name="impression" value="not-sure" id="not-sure">
+        <label tabindex="0" class="form-text fieldset-impression__label" for="not-sure">Затрудняюсь ответить</label>
+
+      </fieldset>
+
+      <fieldset class="feedback-form__fieldset fieldset fieldset-sightseeings">
+
+        <legend class="fieldset__legend legend legend_separator">посещенные достопримечательности:</legend>
+
+        <input class="visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="devil-bridge">Мост Дьявола</label>
+
+        <input class="visually-hidden" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
+        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="mountain-bell">Гора-Колокол</label>
+
+        <input class="visually-hidden" type="checkbox" name="park" id="park" checked>
+        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="park">Слайд-парк</label>
+
+        <input class="visually-hidden" type="checkbox" name="red-mountain" id="red-mountain" checked>
+        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="red-mountain">Красные скалы</label>
+
+      </fieldset>
+
+      <fieldset class="feedback-form__fieldset fieldset fieldset-feedback">
+
+        <legend class="fieldset__legend legend legend_separator">Опишите свои эмоции:</legend>
+
+        <label class="visually-hidden" for="message">Напишите здесь ваш отзыв в свободной форме</label>
+        <textarea class="form-text field fieldset-feedback__input" name="message" id="message"
+          placeholder="Опишите подробно все свои восторги"></textarea>
+
+      </fieldset>
+
+      <button class="feedback-form__button basic-button cta" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      <p class="feedback-form__prompt text">* — обязательные поля</p>
+
+    </form>
 
   </main>
 
