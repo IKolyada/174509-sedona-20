@@ -11,18 +11,26 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__inner">
-        <button class="main-nav__close button-close">Закрыть</button>
+        <button type="button" class="main-nav__close button-close">Закрыть</button>
         <ul class="main-nav__list menu">
-          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
-          <li class="menu__item"><a class="menu__link" href="photo.html">Фото и видео</a></li>
-          <li class="menu__item"><a class="menu__link" href="form.html">Форма Отзыва</a></li>
-          <li class="menu__item"><a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          </li>
         </ul>
       </div>
       <a href="index.html" class="main-nav__logo">
         <img src="https://via.placeholder.com/102x84" width="102" height="84" alt="Логотип Седона">
       </a>
-      <button class="main-nav__show-menu burger-menu" aria-label="Открыть меню"></button>
+      <button type="button" class="main-nav__show-menu burger-menu" aria-label="Открыть меню"></button>
     </nav>
     <section class="page-header__hero hero hero_index">
       <h1 class="visually-hidden">Лучшие фотографии и видео из Седоны</h1>
@@ -46,7 +54,7 @@
             <p class="photo__title">неродные просторы</p>
             <p class="photo__author">Автор фото: Борис</p>
           </div>
-          <button class="photo__like">1350</button>
+          <button type="button" class="photo__like">1350</button>
         </figcaption>
       </figure>
 
@@ -57,7 +65,7 @@
             <p class="photo__title">Местная растительность</p>
             <p class="photo__author">Автор фото: Сергей</p>
           </div>
-          <button class="photo__like">145</button>
+          <button type="button" class="photo__like">145</button>
         </figcaption>
       </figure>
 
@@ -68,7 +76,7 @@
             <p class="photo__title">Дорога на север</p>
             <p class="photo__author">Автор фото: Петр</p>
           </div>
-          <button class="photo__like">96</button>
+          <button type="button" class="photo__like">96</button>
         </figcaption>
       </figure>
 
@@ -79,14 +87,33 @@
             <p class="photo__title">Мост дьявола</p>
             <p class="photo__author">Автор фото: Антон</p>
           </div>
-          <button class="photo__like">254</button>
+          <button type="button" class="photo__like">254</button>
         </figcaption>
       </figure>
 
     </section>
 
+    <section class="video">
 
-    <!-- Здесь будет блок с видео -->
+      <p class="video__title title">Все еще сомневаетесь?</p>
+      <p class="video__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        раз!</p>
+
+      <div class="video__wrapper video-player">
+        <img class="video-player__clip clip" src="https://via.placeholder.com/320x201" width="320" height="201"
+          alt="Картинка-заглушка для видео">
+        <div class="video-player__controls video-controls">
+          <button type="button" class="video-controls__restart restart-button"></button>
+          <div class="video-controls__timeline-wrap timeline-wrap">
+            <div class="timeline-wrap__timeline timeline"></div>
+            <button type="button" class="timeline-wrap__toggle timeline-toggle"></button>
+          </div>
+          <button type="button" class="video-controls__subtitles button-subtitles"></button>
+          <button type="button" class="video-controls__fullscrin video-fullscrin"></button>
+        </div>
+      </div>
+
+    </section>
 
   </main>
 
