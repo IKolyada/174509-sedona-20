@@ -1,0 +1,15 @@
+.page {
+  min-width: 100%;
+}
+
+.page__body {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-white;
+}
+
+.page__img {
+  width: 100%;
+  height: auto;
+}

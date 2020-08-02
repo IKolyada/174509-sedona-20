@@ -1,0 +1,24 @@
+.card {
+  background-color: $basic-gray;
+  text-align: center;
+  padding: 32px 17px;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.card__number {
+  display: block;
+  margin: 10px 0;
+}
+
+.card_sight {
+  background-color: $primary-blue;
+  margin-top: 32px;
+
+  &:first-child {
+    clip-path: polygon(0 0, 50% 25px, 100% 0, 100% 100%, 0 100%);
+    padding-top: 57px;
+  }
+}

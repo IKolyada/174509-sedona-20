@@ -1,0 +1,13 @@
+.hero {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 90px 0 85px 0;
+  clip-path: polygon(0 0, 100% 0, 100% 364px, 50% 100%, 0 364px);
+}
+
+.hero_inner-page {
+  padding: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 133px, 50% 100%, 0 133px);
+}
