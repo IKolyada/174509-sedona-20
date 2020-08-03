@@ -1,6 +1,6 @@
 .title {
-  font-family: $primary-font;
-  color: $primary-black;
+  font-family: var(--primary-font);
+  color: var(--primary-black);
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -8,5 +8,5 @@
 }
 
 .title_white {
-  color: $primary-white;
+  color: var(--primary-white);
 }

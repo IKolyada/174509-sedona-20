@@ -1,6 +1,6 @@
 .text {
-  font-family: $primary-font;
-  color: $primary-black;
+  font-family: var(--primary-font);
+  color: var(--primary-black);
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -8,5 +8,5 @@
 }
 
 .text_white {
-  color: $primary-white;
+  color: var(--primary-white);
 }

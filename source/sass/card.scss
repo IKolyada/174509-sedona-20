@@ -1,5 +1,5 @@
 .card {
-  background-color: $basic-gray;
+  background-color: var(--basic-gray);
   text-align: center;
   padding: 32px 17px;
 }
@@ -14,7 +14,7 @@
 }
 
 .card_sight {
-  background-color: $primary-blue;
+  background-color: var(--primary-blue);
   margin-top: 32px;
 
   &:first-child {

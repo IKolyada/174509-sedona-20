@@ -1,6 +1,6 @@
 .photo__title {
   margin: 0;
-  font-family: $primary-font;
+  font-family: var(--primary-font);
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -9,7 +9,7 @@
 
 .photo__author {
   margin: 0;
-  font-family: $primary-font;
+  font-family: var(--primary-font);
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
