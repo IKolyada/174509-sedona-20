@@ -1,0 +1,32 @@
+.menu {
+  @include list;
+  background-color: var(--primary-blue);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:not(:first-child) {
+    border-top: 1px solid var(--white-opacity-02);
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--black-opacity-02);
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--primary-white);
+}
