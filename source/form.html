@@ -36,20 +36,19 @@
     </nav>
     <section class="page-header__hero hero hero_inner-page">
       <h1 class="visually-hidden">Отзывы о посещении Седоны</h1>
-      <img class="hero__content" src="img/text-sedona.svg" width="229" height="158"
-        alt="Добро пожаловать в Седону">
+      <img class="hero__content" src="img/text-sedona.svg" width="229" height="158" alt="Добро пожаловать в Седону">
     </section>
   </header>
 
   <main class="page-content">
-
-    <p class="page-content__title title">Оставьте свой отзыв</p>
-    <p class="page-content__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-      вами достопримечательностях</p>
-
+    <div class="page-content__container">
+      <p class="page-content__title title">Оставьте свой отзыв</p>
+      <p class="page-content__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        вами достопримечательностях</p>
+    </div>
     <form class="page-content__form feedback-form" action="https://echo.htmlacademy.ru" method="POST">
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset-name">
+      <fieldset class="feedback-form__fieldset fieldset fieldset_name">
 
         <legend class="fieldset__legend legend">Представьтесь:</legend>
 
@@ -67,7 +66,7 @@
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset-contact">
+      <fieldset class="feedback-form__fieldset fieldset fieldset_contact">
 
         <legend class="fieldset__legend legend legend_separator">Контактная информация:</legend>
 
@@ -81,7 +80,7 @@
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset-impression">
+      <fieldset class="feedback-form__fieldset fieldset fieldset_impression">
 
         <legend class="fieldset__legend legend">ВАше Общее впечатление:</legend>
 
@@ -96,7 +95,7 @@
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset-sightseeings">
+      <fieldset class="feedback-form__fieldset fieldset fieldset_sightseeings">
 
         <legend class="fieldset__legend legend legend_separator">посещенные достопримечательности:</legend>
 
@@ -114,12 +113,12 @@
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset-feedback">
+      <fieldset class="feedback-form__fieldset fieldset fieldset_feedback">
 
         <legend class="fieldset__legend legend legend_separator">Опишите свои эмоции:</legend>
 
         <label class="visually-hidden" for="message">Напишите здесь ваш отзыв в свободной форме</label>
-        <textarea class="form-text field fieldset-feedback__input" name="message" id="message"
+        <textarea class="form-text field field_feedback" name="message" id="message"
           placeholder="Опишите подробно все свои восторги"></textarea>
 
       </fieldset>
@@ -147,7 +146,7 @@
     <section class="page-footer__dev dev">
       <p class="dev__text text">Разработано</p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="dev__logo-htmlacademy"><img
-          src="https://via.placeholder.com/27x34" alt="Логотип htmlacademy"></a>
+          src="img/logo-htmlacademy.svg" alt="Логотип htmlacademy"></a>
     </section>
 
   </footer>
