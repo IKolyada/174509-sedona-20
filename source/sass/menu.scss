@@ -1,5 +1,5 @@
 .menu {
-  @include list;
+  @include list-reset;
   background-color: var(--primary-blue);
   width: 100%;
   display: flex;
