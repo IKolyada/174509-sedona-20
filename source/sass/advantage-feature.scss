@@ -1,8 +1,9 @@
 .advantage-feature {
-  padding: 32px 17px 0 17px;
+  padding: 0 17px 32px 17px;
 
-  &:last-child {
-    padding-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    padding: 35px;
+    text-align: center;
   }
 }
 

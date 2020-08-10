@@ -5,8 +5,18 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .title_white {
   color: var(--primary-white);
+}
+
+.title_big {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }

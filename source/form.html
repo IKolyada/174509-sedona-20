@@ -10,7 +10,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header page__wrapper">
     <nav class="main-nav">
       <div class="main-nav__inner">
         <button type="button" class="main-nav__close visually-hidden">Закрыть</button>
@@ -29,10 +29,12 @@
           </li>
         </ul>
       </div>
-      <a href="index.html" class="main-nav__logo logo visually-hidden">
+      <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
       </a>
-      <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      <div class="main-nav__button-box">
+        <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      </div>
     </nav>
     <section class="page-header__hero hero hero_inner-page">
       <h1 class="visually-hidden">Отзывы о посещении Седоны</h1>
@@ -40,9 +42,9 @@
     </section>
   </header>
 
-  <main class="page-content">
+  <main class="page-content page__wrapper">
     <div class="page-content__container">
-      <p class="page-content__title title">Оставьте свой отзыв</p>
+      <p class="page-content__title title title_big">Оставьте свой отзыв</p>
       <p class="page-content__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
     </div>
@@ -130,7 +132,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page__wrapper">
 
     <p class="page-footer__cta cta">#visitSEDONA</p>
 

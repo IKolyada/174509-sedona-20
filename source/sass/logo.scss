@@ -1,0 +1,25 @@
+.logo {
+  color: transparent;
+  cursor: pointer;
+  width: 101px;
+
+  &::before {
+    content: url("../img/logo-sedona-mobile.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+
+    &::before {
+      content: url("../img/logo-sedona-tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+
+    &::before {
+      content: url("../img/logo-sedona-desktop.svg");
+    }
+  }
+}

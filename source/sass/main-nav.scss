@@ -1,0 +1,45 @@
+.main-nav {
+  min-height: 56px;
+  position: relative;
+  display: grid;
+}
+
+.main-nav__inner {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-nav__button-box {
+  padding: 17px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__show-menu {
+  display: block;
+  height: 22px;
+  margin-left: auto;
+}
+
+.main-nav__logo {
+  height: 0;
+  position: relative;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+  }
+}
