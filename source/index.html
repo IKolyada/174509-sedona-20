@@ -29,7 +29,7 @@
           </li>
         </ul>
       </div>
-      <a class="main-nav__logo logo">
+      <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
       </a>
       <div class="main-nav__button-box">
@@ -56,23 +56,28 @@
           там течет
           своя жизнь</dd>
       </dl>
-      <div class="advantages__img advantages__img_right">
-        Фотография - вид на город
+
+      <div class="advantages__img-city">
+        <picture>
+          <source media="(min-width: 512px)" srcset="img/main-city-desktop@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/main-city-tablet@1x.jpg">
+          <img class="pic" src="img/main-city-mobile@1x.jpg" alt="Фотография - вид на город">
+        </picture>
       </div>
 
-      <dl class="advantages__card advantage-feature">
-        <dt class="title advantage-feature__title advantage-feature__title_apartment">Жилье</dt>
-        <dd class="text card__text advantage-feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
+      <dl class="advantages__card card card_feature">
+        <dt class="title card__title card__title-feature  card__title-feature_apartment">Жилье</dt>
+        <dd class="text card__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
       </dl>
 
-      <dl class="advantages__card advantage-feature">
-        <dt class="title advantage-feature__title advantage-feature__title_souvenir">Сувениры</dt>
-        <dd class="text card__text advantage-feature__text">Не только китайского, но и местного производства!</dd>
+      <dl class="advantages__card card card_feature">
+        <dt class="title card__title card__title-feature  card__title-feature_souvenir">Сувениры</dt>
+        <dd class="text card__text">Не только китайского, но и местного производства!</dd>
       </dl>
 
-      <dl class="advantages__card advantage-feature">
-        <dt class="title advantage-feature__title advantage-feature__title_food">Еда</dt>
-        <dd class="text card__text advantage-feature__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+      <dl class="advantages__card card card_feature">
+        <dt class="title  card__title card__title-feature  card__title-feature_food">Еда</dt>
+        <dd class="text card__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
         </dd>
       </dl>
 
@@ -82,8 +87,13 @@
           осмелитесь, конечно</dd>
       </dl>
 
-      <div class="advantages__img advantages__img_left">
-        Фотография - вид на каньон
+      <div class="advantages__img-bridge">
+        <picture>
+          <source media="(min-width: 512px)" srcset="img/main-bridge-desktop@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/main-bridge-tablet@1x.jpg">
+          <img class="pic" src="img/main-bridge-mobile@1x.jpg" alt="Фотография - вид на каньон">
+        </picture>
+
       </div>
 
       <dl class="advantages__card card">
@@ -109,7 +119,7 @@
       <p class="find-hotel__title cta cta_big">Заинтересовались?</p>
       <p class="find-hotel__text text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
         в
-        седоне</p>
+        Cедоне</p>
       <button type="button" class="button button_find-hotel cta">найти гостиницу</button>
     </section>
 

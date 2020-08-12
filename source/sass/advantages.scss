@@ -7,15 +7,7 @@
   }
 }
 
-.advantages__img {
-  background-size: cover;
-  color: transparent;
-  min-height: 260px;
-  background-position: 0 center;
-}
-
-.advantages__img_right {
-  background-image: url("../img/main-city-desktop@1x.jpg");
+.advantages__img-city {
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
@@ -25,9 +17,7 @@
   }
 }
 
-.advantages__img_left {
-  background-image: url("../img/photo-bridge-desktop@1x.jpg");
-
+.advantages__img-bridge {
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;

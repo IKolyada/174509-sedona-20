@@ -34,15 +34,10 @@
     z-index: 1;
     bottom: 0;
     left: 0;
-    display: block;
     width: 100%;
     background-color: var(--black-opacity-03);
     color: var(--primary-white);
   }
-}
-
-.photo__pic {
-  display: block;
 }
 
 .gallery__photo:nth-child(2n+3) .photo__caption {

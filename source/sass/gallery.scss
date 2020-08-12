@@ -10,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
   }
 }
 
@@ -19,9 +20,5 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
   }
 }
