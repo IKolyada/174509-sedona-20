@@ -11,12 +11,12 @@
   padding: 0 21px;
   margin-bottom: 20px;
 
+  &:focus {
+    outline: none;
+  }
+
   &::placeholder {
-    font-family: var(--primary-font);
     color: var(--primary-black);
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
   }
 }
 
