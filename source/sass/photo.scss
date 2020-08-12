@@ -14,3 +14,34 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+.photo_big {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.photo__caption {
+  @media (min-width: $tablet-width) {
+    background-color: var(--light-gray);
+    padding: 22px 20px 15px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black-opacity-03);
+    color: var(--primary-white);
+  }
+}
+
+.gallery__photo:nth-child(2n+3) .photo__caption {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-color: var(--medium-gray);
+  }
+}

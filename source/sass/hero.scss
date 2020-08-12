@@ -1,13 +1,25 @@
 .hero {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: var(--primary-blue);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   padding: 90px 0 85px 0;
   clip-path: polygon(0 0, 100% 0, 100% 364px, 50% 100%, 0 364px);
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 
 .hero_inner-page {
-  padding: 0;
   clip-path: polygon(0 0, 100% 0, 100% 133px, 50% 100%, 0 133px);
+
+  @media (min-width: $tablet-width) {
+    background-position: center 70%;
+  }
 }

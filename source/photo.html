@@ -10,7 +10,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header page__wrapper">
     <nav class="main-nav">
       <div class="main-nav__inner">
         <button type="button" class="main-nav__close visually-hidden">Закрыть</button>
@@ -29,10 +29,12 @@
           </li>
         </ul>
       </div>
-      <a href="index.html" class="main-nav__logo logo visually-hidden">
+      <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
       </a>
-      <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      <div class="main-nav__button-box">
+        <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      </div>
     </nav>
     <section class="page-header__hero hero hero_inner-page">
       <h1 class="visually-hidden">Лучшие фотографии и видео из Седоны</h1>
@@ -40,16 +42,21 @@
     </section>
   </header>
 
-  <main class="page-content">
+  <main class="page-content page__wrapper">
 
-    <p class="page-content__title title">Фото и видео</p>
+    <p class="page-content__title title title_big">Фото и видео</p>
     <p class="page-content__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
       политике и экономике.</p>
 
     <section class="gallery">
 
       <figure class="gallery__photo photo_big photo">
-        <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Пейзаж Седоны">
+        <picture>
+          <source media="(min-width: 769px)" srcset="img/photo-sunset-desktop@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/photo-sunset-tablet@1x.jpg">
+          <img class="picture" src="img/photo-sunset-mobile@1x.jpg" alt="Закат в Седоне">
+        </picture>
+
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">Неродные просторы</p>
@@ -60,7 +67,11 @@
       </figure>
 
       <figure class="gallery__photo photo">
-        <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Растения Седоны">
+        <picture>
+          <source media="(min-width: 512px)" srcset="img/photo-cactus-desktop@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/photo-cactus-tablet@1x.jpg">
+          <img class="picture" src="img/photo-cactus-mobile@1x.jpg" alt="Растения Седоны">
+        </picture>
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">Местная растительность</p>
@@ -71,7 +82,11 @@
       </figure>
 
       <figure class="gallery__photo photo">
-        <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Пейзаж Седоны">
+        <picture>
+          <source media="(min-width: 512px)" srcset="img/photo-roads-desktop@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/photo-roads-tablet@1x.jpg">
+          <img class="picture" src="img/photo-roads-mobile@1x.jpg" alt="Пейзаж Седоны">
+        </picture>
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">Дорога на север</p>
@@ -82,7 +97,11 @@
       </figure>
 
       <figure class="gallery__photo photo">
-        <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Пейзаж Седоны">
+        <picture>
+          <source media="(min-width: 512px)" srcset="img/photo-bridge-desktop@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/photo-bridge-tablet@1x.jpg">
+          <img class="picture" src="img/photo-bridge-mobile@1x.jpg" alt="Пейзаж Седоны">
+        </picture>
         <figcaption class="photo__caption">
           <div class="photo__description">
             <p class="photo__title">Мост дьявола</p>
@@ -118,7 +137,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page__wrapper">
 
     <p class="page-footer__cta cta">#visitSEDONA</p>
 

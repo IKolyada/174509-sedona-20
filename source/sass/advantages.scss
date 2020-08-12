@@ -1,5 +1,28 @@
 .advantages {
+  margin-top: 32px;
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages__img-city {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    margin-bottom: 0;
+  }
+}
+
+.advantages__img-bridge {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
 }
 
 .advantages__card {

@@ -2,6 +2,13 @@
   background-color: var(--basic-gray);
   text-align: center;
   padding: 32px 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 40px;
+  }
 }
 
 .card__text {
@@ -10,15 +17,47 @@
 
 .card__number {
   display: block;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .card_sight {
   background-color: var(--primary-blue);
-  margin-top: 32px;
 
   &:first-child {
     clip-path: polygon(0 0, 50% 25px, 100% 0, 100% 100%, 0 100%);
     padding-top: 57px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding: 40px 32px;
+
+    &:first-child {
+      clip-path: none;
+      padding-top: 40px;
+    }
+  }
+}
+
+.card_feature {
+  text-align: left;
+  background-color: var(--primary-white);
+  padding: 0 17px 32px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px;
+    text-align: center;
+  }
+}
+
+.card__title {
+  margin-bottom: 10px;
+}
+
+.card__title-feature {
+  margin-bottom: 25px;
+}
+
+.card_feature:first-of-type {
+  padding-top: 32px;
 }

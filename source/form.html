@@ -10,7 +10,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header page__wrapper">
     <nav class="main-nav">
       <div class="main-nav__inner">
         <button type="button" class="main-nav__close visually-hidden">Закрыть</button>
@@ -29,10 +29,12 @@
           </li>
         </ul>
       </div>
-      <a href="index.html" class="main-nav__logo logo visually-hidden">
+      <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
       </a>
-      <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      <div class="main-nav__button-box">
+        <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      </div>
     </nav>
     <section class="page-header__hero hero hero_inner-page">
       <h1 class="visually-hidden">Отзывы о посещении Седоны</h1>
@@ -40,85 +42,85 @@
     </section>
   </header>
 
-  <main class="page-content">
+  <main class="page-content page__wrapper">
     <div class="page-content__container">
-      <p class="page-content__title title">Оставьте свой отзыв</p>
+      <p class="page-content__title title title_big">Оставьте свой отзыв</p>
       <p class="page-content__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
         вами достопримечательностях</p>
     </div>
     <form class="page-content__form feedback-form" action="https://echo.htmlacademy.ru" method="POST">
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset_name">
+      <fieldset class="feedback-form__fieldset fieldset">
 
         <legend class="fieldset__legend legend">Представьтесь:</legend>
 
-        <label class="fieldset-name__label text" for="name">ИМЯ*:</label>
-        <input class="fieldset-name__input field form-text" type="text" id="name" name="name" placeholder="Петр"
+        <label class="text" for="name">ИМЯ*:</label>
+        <input class="fieldset__input form-text" type="text" id="name" name="name" placeholder="Петр"
           required>
 
-        <label class="fieldset-name__label text" for="surname">Фамилия*:</label>
-        <input class="fieldset-name__input field form-text" type="text" id="surname" name="name" placeholder="Иванов"
+        <label class="text" for="surname">Фамилия*:</label>
+        <input class="fieldset__input form-text" type="text" id="surname" name="name" placeholder="Иванов"
           required>
 
-        <label class="fieldset-name__label text" for="patronymic">Отчество*:</label>
-        <input class="fieldset-name__input field form-text" type="text" id="patronymic" name="name"
+        <label class="text" for="patronymic">Отчество*:</label>
+        <input class="fieldset__input form-text" type="text" id="patronymic" name="name"
           placeholder="Александрович">
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset_contact">
+      <fieldset class="feedback-form__fieldset fieldset">
 
         <legend class="fieldset__legend legend legend_separator">Контактная информация:</legend>
 
-        <label class="fieldset-contact__label text" for="phone">Контактный телефон*:</label>
-        <input class="fieldset-contact__input field form-text field_phone" type="tel" id="phone" name="phone"
+        <label class="text" for="phone">Контактный телефон*:</label>
+        <input class="fieldset__input form-text field_phone" type="tel" id="phone" name="phone"
           placeholder="Введите телефон" required>
 
-        <label class="fieldset-contact__label text" for="email">Электронная почта*:</label>
-        <input class="fieldset-contact__input field form-text field_email" type="email" id="email" name="email"
+        <label class="text" for="email">Электронная почта*:</label>
+        <input class="fieldset__input form-text field_email" type="email" id="email" name="email"
           placeholder="Введите e-mail" required>
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset_impression">
+      <fieldset class="feedback-form__fieldset fieldset">
 
         <legend class="fieldset__legend legend">ВАше Общее впечатление:</legend>
 
         <input class="visually-hidden" type="radio" name="impression" value="great" id="great" checked>
-        <label tabindex="0" class="form-text fieldset-impression__label" for="great">Скорее положительное</label>
+        <label tabindex="0" class="form-text" for="great">Скорее положительное</label>
 
         <input class="visually-hidden" type="radio" name="impression" value="bad" id="bad">
-        <label tabindex="0" class="form-text fieldset-impression__label" for="bad">Скорее отрицательное</label>
+        <label tabindex="0" class="form-text" for="bad">Скорее отрицательное</label>
 
         <input class="visually-hidden" type="radio" name="impression" value="not-sure" id="not-sure">
-        <label tabindex="0" class="form-text fieldset-impression__label" for="not-sure">Затрудняюсь ответить</label>
+        <label tabindex="0" class="form-text" for="not-sure">Затрудняюсь ответить</label>
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset_sightseeings">
+      <fieldset class="feedback-form__fieldset fieldset">
 
         <legend class="fieldset__legend legend legend_separator">посещенные достопримечательности:</legend>
 
         <input class="visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="devil-bridge">Мост Дьявола</label>
+        <label tabindex="0" class="form-text" for="devil-bridge">Мост Дьявола</label>
 
         <input class="visually-hidden" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
-        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="mountain-bell">Гора-Колокол</label>
+        <label tabindex="0" class="form-text" for="mountain-bell">Гора-Колокол</label>
 
         <input class="visually-hidden" type="checkbox" name="park" id="park" checked>
-        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="park">Слайд-парк</label>
+        <label tabindex="0" class="form-text" for="park">Слайд-парк</label>
 
         <input class="visually-hidden" type="checkbox" name="red-mountain" id="red-mountain" checked>
-        <label tabindex="0" class="form-text fieldset-sightseeings__label" for="red-mountain">Красные скалы</label>
+        <label tabindex="0" class="form-text" for="red-mountain">Красные скалы</label>
 
       </fieldset>
 
-      <fieldset class="feedback-form__fieldset fieldset fieldset_feedback">
+      <fieldset class="feedback-form__fieldset fieldset">
 
         <legend class="fieldset__legend legend legend_separator">Опишите свои эмоции:</legend>
 
         <label class="visually-hidden" for="message">Напишите здесь ваш отзыв в свободной форме</label>
-        <textarea class="form-text field field_feedback" name="message" id="message"
+        <textarea class="form-text fieldset__input fieldset__input_feedback" name="message" id="message"
           placeholder="Опишите подробно все свои восторги"></textarea>
 
       </fieldset>
@@ -130,7 +132,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page__wrapper">
 
     <p class="page-footer__cta cta">#visitSEDONA</p>
 

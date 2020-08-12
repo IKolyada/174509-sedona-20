@@ -3,7 +3,11 @@
 @import "mixins.scss";
 @import "global.scss";
 @import "base.scss";
+@import "picture.scss";
 @import "page.scss";
+@import "page-header.scss";
+@import "logo.scss";
+@import "main-nav.scss";
 @import "menu.scss";
 @import "hero.scss";
 @import "title.scss";
@@ -11,7 +15,7 @@
 @import "page-content.scss";
 @import "advantages.scss";
 @import "card.scss";
-@import "advantage-feature.scss";
+@import "map-wrapper.scss";
 @import "page-footer.scss";
 @import "cta.scss";
 @import "socials.scss";
@@ -24,6 +28,5 @@
 @import "video-player.scss";
 @import "fieldset.scss";
 @import "legend.scss";
-@import "field.scss";
 @import "form-text.scss";
 @import "feedback-form.scss";

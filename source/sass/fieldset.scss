@@ -3,3 +3,26 @@
   margin: 0;
   padding: 0;
 }
+
+.fieldset__input {
+  border: none;
+  background-color: var(--light-gray);
+  min-height: 58px;
+  padding: 0 21px;
+  margin-bottom: 20px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--primary-black);
+  }
+}
+
+.fieldset__input_feedback {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  min-height: 160px;
+  width: 100%;
+}
