@@ -1,20 +1,15 @@
 .video-player {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .video-player__clip {
   width: 100%;
-}
-
-.video__title {
-  margin: 28px;
-}
-
-.video__text {
-  margin: 28px;
 }
 
 .video-player__controls {
@@ -22,5 +17,15 @@
   margin: -43px 20px 0 20px;
   height: 109px;
   background: linear-gradient(to top, var(--light-gray) 66px, var(--black-opacity-06) 20px);
-  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background: unset;
+    background-color: var(--black-opacity-06);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    height: 93px;
+  }
 }

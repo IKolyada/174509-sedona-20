@@ -6,3 +6,19 @@
   line-height: 26px;
   min-height: 58px;
 }
+
+.button_find-hotel {
+  max-width: 458px;
+}
+
+.button_feedback {
+  grid-area: button;
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 480px;
+  }
+}

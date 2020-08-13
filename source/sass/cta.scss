@@ -5,3 +5,9 @@
   font-size: 21px;
   line-height: 26px;
 }
+
+.cta_big {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}

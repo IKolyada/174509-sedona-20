@@ -4,4 +4,13 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.legend_separator {
+  text-align: center;
 }

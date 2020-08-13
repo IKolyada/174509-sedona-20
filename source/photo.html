@@ -38,7 +38,7 @@
     </nav>
     <section class="page-header__hero hero hero_inner-page">
       <h1 class="visually-hidden">Лучшие фотографии и видео из Седоны</h1>
-      <img class="hero__content " src="img/text-sedona.svg" width="229" height="158" alt="Добро пожаловать в Седону">
+      <img src="img/text-sedona.svg" width="460" height="350" alt="Добро пожаловать в Седону">
     </section>
   </header>
 
@@ -120,8 +120,11 @@
         раз!</p>
 
       <div class="video-player">
-        <img class="video-player__clip" src="img/video-mobile@1x.jpg" width="320" height="201"
-          alt="Картинка-заглушка для видео">
+        <picture>
+          <source media="(min-width: 512px)" srcset="img/video-desktop@1x.jpg">
+          <source media="(min-width: 320px)" srcset="img/video-tablet@1x.jpg">
+          <img class="picture" src="img/video-mobile@1x.jpg" alt="Картинка-заглушка для видео">
+        </picture>
         <div class="video-player__controls">
           <button type="button" class="video-player__restart"></button>
           <div class="video-player__timeline-wrap">
