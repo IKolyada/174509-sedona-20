@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 90px 0 85px 0;
+  padding: 90px 19px 85px 19px;
   clip-path: polygon(0 0, 100% 0, 100% 364px, 50% 100%, 0 364px);
 
   @media (min-width: $tablet-width) {
@@ -17,7 +17,13 @@
 }
 
 .hero_inner-page {
+  padding: 55px 19px;
   clip-path: polygon(0 0, 100% 0, 100% 133px, 50% 100%, 0 133px);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+    padding-bottom: 105px;
+  }
 
   @media (min-width: $tablet-width) {
     background-position: center 70%;

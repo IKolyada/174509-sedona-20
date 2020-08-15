@@ -1,7 +1,16 @@
 .fieldset {
   border: none;
-  margin: 0;
+  margin: 50px 0;
   padding: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.fieldset__legend {
+  margin-bottom: 50px;
 }
 
 .fieldset__input {
@@ -20,9 +29,83 @@
   }
 }
 
+.fieldset__input_contact {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .fieldset__input_feedback {
   padding-top: 13px;
   padding-bottom: 13px;
   min-height: 160px;
   width: 100%;
+}
+
+.fieldset_name {
+  @media (min-width: $tablet-width) {
+    grid-area: name;
+    width: auto;
+    margin-left: auto;
+  }
+}
+
+.fieldset_contact {
+  @media (min-width: $tablet-width) {
+    grid-area: contact;
+  }
+}
+
+.fieldset_expression {
+  @media (min-width: $tablet-width) {
+    grid-area: expression;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.fieldset_sightseeing {
+  @media (min-width: $tablet-width) {
+    grid-area: sightseeing;
+  }
+}
+
+.fieldset_feedback {
+  @media (min-width: $tablet-width) {
+    grid-area: feedback;
+  }
+}
+
+.fieldset__name-box {
+  box-sizing: content-box;
+  margin-left: auto;
+}
+
+.fieldset__list {
+  @include list-reset;
+}
+
+.fieldset__list_contact {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.fieldset__list_sightseeing {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.fieldset__item_sightseeing {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    flex-basis: 50%;
+    text-align: center;
+  }
 }
