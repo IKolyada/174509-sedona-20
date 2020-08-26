@@ -1,10 +1,15 @@
 .photo__title {
   margin: 0;
+  margin-top: 11px;
   font-family: var(--primary-font);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .photo__author {
@@ -15,18 +20,12 @@
   line-height: 24px;
 }
 
-.photo_big {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-}
-
 .photo__caption {
   @media (min-width: $tablet-width) {
-    background-color: var(--light-gray);
     padding: 22px 20px 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,8 +39,35 @@
   }
 }
 
-.gallery__photo:nth-child(2n+3) .photo__caption {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    background-color: var(--medium-gray);
+.photo__like {
+  cursor: pointer;
+  border: none;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+
+  &::before {
+    content: url("../img/icon-like.svg");
+    opacity: 0.3;
+    margin-right: 14px;
+
+    @media (min-width: $desktop-width) {
+      opacity: 1;
+      filter: invert(1);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: var(--primary-white);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }

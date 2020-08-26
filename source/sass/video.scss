@@ -1,7 +1,11 @@
 .video {
-  text-align: center;
   margin-top: 63px;
-  margin-bottom: 85px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
 .video__title {

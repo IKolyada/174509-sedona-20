@@ -1,3 +1,7 @@
 .picture {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }

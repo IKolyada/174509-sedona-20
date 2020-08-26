@@ -5,6 +5,20 @@
   color: var(--primary-white);
   line-height: 26px;
   min-height: 58px;
+  outline: none;
+
+  &:hover {
+    background-color: var(--medium-dark-blue);
+  }
+
+  &:active {
+    background-color: var(--dark-blue);
+    color: var(--white-opacity-03);
+  }
+
+  &:disabled {
+    background-color: var(--medium-gray);
+  }
 }
 
 .button_find-hotel {

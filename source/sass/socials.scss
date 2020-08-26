@@ -1,6 +1,29 @@
+.socials {
+  display: flex;
+}
+
 .socials__link {
   width: 46px;
   height: 48px;
   background-color: var(--primary-blue);
-  display: inline-block;
+  margin-left: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--medium-dark-blue);
+  }
+
+  &:active {
+    background-color: var(--dark-blue);
+  }
+
+  &:active .socials__icon {
+    opacity: 0.3;
+  }
+}
+
+.socials__icon {
+  filter: invert(1);
 }

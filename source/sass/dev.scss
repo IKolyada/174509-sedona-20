@@ -2,3 +2,23 @@
   display: flex;
   align-items: center;
 }
+
+.dev__text {
+  margin-right: 10px;
+}
+
+.dev__logo-htmlacademy {
+  width: 27px;
+  height: 34px;
+  background-color: var(--primary-black);
+  mask-image: url("../img/logo-htmlacademy.svg");
+  color: transparent;
+
+  &:hover {
+    background-color: var(--primary-blue);
+  }
+
+  &:active {
+    background-color: var(--black-opacity-03);
+  }
+}
