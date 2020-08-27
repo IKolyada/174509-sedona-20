@@ -216,6 +216,10 @@
       background-color: var(--dark-gray);
     }
   }
+
+  &:focus::before {
+    @include custom-outline;
+  }
 }
 
 .fieldset__input-radio:checked ~ .fieldset__radio {
@@ -265,6 +269,10 @@
       background-color: var(--dark-gray);
     }
   }
+
+  &:focus::before {
+    @include custom-outline;
+  }
 }
 
 .fieldset__input-checkbox:checked ~ .fieldset__checkbox {
@@ -285,5 +293,11 @@
   &::after {
     content: url("../img/icon-tick.svg");
     opacity: 0.3;
+  }
+}
+
+.fieldset__hide {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

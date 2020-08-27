@@ -25,22 +25,14 @@
     display: flex;
     align-items: center;
 
-    &::before {
-      content: "";
-      height: 1px;
-      width: 100%;
-      display: inline-block;
-      background-color: var(--medium-gray);
-      margin-right: 65px;
-    }
-
+    &::before,
     &::after {
       content: "";
       height: 1px;
       width: 100%;
       display: inline-block;
       background-color: var(--medium-gray);
-      margin-left: 65px;
+      margin-right: 65px;
     }
   }
 }

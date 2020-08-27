@@ -13,9 +13,6 @@
   <header class="page-header page__wrapper">
     <nav class="main-nav">
       <div class="main-nav__inner">
-        <div class="main-nav__close">
-          <button type="button" class="main-nav__close-button">Закрыть</button>
-        </div>
         <ul class="main-nav__list menu">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
@@ -34,8 +31,10 @@
       <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
       </a>
-      <div class="main-nav__show-menu">
-        <button type="button" class="main-nav__burger" aria-label="Открыть меню"></button>
+      <div class="main-nav__holder">
+        <div class="main-nav__burger-wrap">
+          <button tabindex="0" type="button" class="main-nav__burger" aria-label="Открыть меню"></button>
+        </div>
       </div>
     </nav>
     <section class="page-header__hero hero hero_inner-page">
@@ -81,7 +80,7 @@
 
         <ul class="fieldset__list fieldset__list_contact">
           <li class="fieldset__item-contact">
-            <label class="text fieldset__label-contact" for="phone"><span class="hide">Контактный
+            <label class="text fieldset__label-contact" for="phone"><span class="fieldset__hide">Контактный
               </span>телефон*:</label>
             <div class="fieldset__phone fieldset__input_contact">
               <input class="fieldset__input  form-text " type="tel" id="phone" name="phone"

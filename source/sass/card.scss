@@ -10,6 +10,11 @@
   &:last-child {
     padding-bottom: 26px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+    justify-content: center;
+  }
 }
 
 .card__text {
@@ -37,20 +42,15 @@
   display: block;
   margin-bottom: 10px;
 
-  &::before {
-    content: "—";
-    margin-right: 3px;
-  }
-
+  &::before,
   &::after {
     content: "—";
-    margin-left: 3px;
+    margin: 0 3px;
   }
 }
 
 .card_sight {
   background-color: var(--primary-blue);
-  justify-content: center;
   padding: 32px 17px;
 
   &:first-child {

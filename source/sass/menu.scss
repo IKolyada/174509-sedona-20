@@ -19,11 +19,12 @@
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
-  min-height: 55px;
+  min-height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 153px;
+  padding-top: 6px;
 
   @media (max-width: 767px) {
     &:not(:first-child) {
