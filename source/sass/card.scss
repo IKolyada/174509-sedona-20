@@ -1,13 +1,19 @@
 .card {
   background-color: var(--basic-gray);
   text-align: center;
-  padding: 32px 17px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+
+  &:last-child {
+    padding-bottom: 26px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 42px 40px;
+    min-height: 256px;
+    justify-content: center;
   }
 }
 
@@ -15,13 +21,37 @@
   margin: 0;
 }
 
+.card__text_feature {
+  margin-left: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.card__text_separator {
+  border-bottom: 1px solid var(--primary-gray);
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .card__number {
   display: block;
   margin-bottom: 10px;
+
+  &::before,
+  &::after {
+    content: "—";
+    margin: 0 3px;
+  }
 }
 
 .card_sight {
   background-color: var(--primary-blue);
+  padding: 32px 17px;
 
   &:first-child {
     clip-path: polygon(0 0, 50% 25px, 100% 0, 100% 100%, 0 100%);
@@ -50,14 +80,90 @@
   }
 }
 
+.card_feature-souvenir {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 3;
+  }
+}
+
+.card_feature-food {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+}
+
 .card__title {
   margin-bottom: 10px;
 }
 
 .card__title-feature {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 9px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+
+    &::before {
+      margin-right: 0;
+      margin-bottom: 27px;
+    }
+  }
 }
 
 .card_feature:first-of-type {
   padding-top: 32px;
+}
+
+.card__title-feature_apartment {
+  &::before {
+    background-image: url("../img/icon-house.svg");
+    width: 39px;
+    height: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 72px;
+      height: 72px;
+    }
+  }
+}
+
+.card__title-feature_souvenir {
+  &::before {
+    background-image: url("../img/icon-gift.svg");
+    width: 32px;
+    height: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 76px;
+      height: 72px;
+    }
+  }
+}
+
+.card__title-feature_food {
+  &::before {
+    background-image: url("../img/icon-burger.svg");
+    width: 40px;
+    height: 34px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 66px;
+      height: 72px;
+    }
+  }
 }

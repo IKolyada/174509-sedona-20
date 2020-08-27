@@ -11,14 +11,13 @@
 <body class="page__body">
 
   <header class="page-header page__wrapper">
-    <nav class="main-nav">
-      <div class="main-nav__inner">
-        <button type="button" class="main-nav__close visually-hidden">Закрыть</button>
+    <nav class="main-nav main-nav_nojs">
+      <div class="main-nav__inner main-nav_closed">
         <ul class="main-nav__list menu">
           <li class="menu__item">
-            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link menu__link_current" href="index.html">Главная</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item_separator">
             <a class="menu__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="menu__item">
@@ -32,8 +31,10 @@
       <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
       </a>
-      <div class="main-nav__button-box">
-        <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      <div class="main-nav__holder">
+        <div class="main-nav__burger-wrap">
+          <button type="button" class="main-nav__burger" aria-label="Открыть меню"></button>
+        </div>
       </div>
     </nav>
     <section class="page-header__hero hero">
@@ -66,17 +67,17 @@
 
       <dl class="advantages__card card card_feature">
         <dt class="title card__title card__title-feature  card__title-feature_apartment">Жилье</dt>
-        <dd class="text card__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
+        <dd class="text card__text card__text_feature">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
       </dl>
 
-      <dl class="advantages__card card card_feature">
+      <dl class="advantages__card card card_feature card_feature-souvenir">
         <dt class="title card__title card__title-feature  card__title-feature_souvenir">Сувениры</dt>
-        <dd class="text card__text">Не только китайского, но и местного производства!</dd>
+        <dd class="text card__text card__text_feature">Не только китайского, но и местного производства!</dd>
       </dl>
 
-      <dl class="advantages__card card card_feature">
+      <dl class="advantages__card card card_feature card_feature-food">
         <dt class="title  card__title card__title-feature  card__title-feature_food">Еда</dt>
-        <dd class="text card__text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+        <dd class="text card__text card__text_feature">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
         </dd>
       </dl>
 
@@ -95,19 +96,21 @@
 
       </div>
 
-      <dl class="advantages__card card">
-        <dt class="title">Небольшая площадь</dt>
-        <dd class="text card__text"><span class="card__number">№3</span>Все интересные места находятся очень близко</dd>
+      <dl class="advantages__card card card_separator">
+        <dt class="title title_br">Небольшая площадь</dt>
+        <dd class="text card__text card__text_separator"><span class="card__number">№3</span>Все интересные места
+          находятся очень близко</dd>
       </dl>
 
-      <dl class="advantages__card card">
-        <dt class="title">Красивая дорога</dt>
-        <dd class="text card__text"><span class="card__number">№4</span>Ехать в Седону из Лас-Вегаса совсем не скучно!
+      <dl class="advantages__card card card_separator">
+        <dt class="title title_br">Красивая дорога</dt>
+        <dd class="text card__text card__text_separator"><span class="card__number">№4</span>Ехать в Седону из
+          Лас-Вегаса совсем не скучно!
         </dd>
       </dl>
 
-      <dl class="advantages__card card">
-        <dt class="title">Мало туристов</dt>
+      <dl class="advantages__card card card_separator">
+        <dt class="title title_br">Мало туристов</dt>
         <dd class="text card__text"><span class="card__number">№5</span>Большинство едет в гранд каньон и толпится там
         </dd>
       </dl>
@@ -134,22 +137,22 @@
     <p class="page-footer__cta cta">#visitSEDONA</p>
 
     <section class="page-footer__socials socials">
-      <a class="socials__link" href=""><img src="img/icon-twitter.svg" width="17" height="14"
+      <a class="socials__link" href=""><img class="socials__icon" src="img/icon-twitter.svg" width="17.5" height="14.57"
           alt="Наша страница в Twitter"></a>
-      <a class="socials__link" href=""><img src="img/icon-facebook.svg" width="17" height="14"
+      <a class="socials__link" href=""><img class="socials__icon" src="img/icon-facebook.svg" width="8.7" height="18.9"
           alt="Наша страница в Facebook"></a>
-      <a class="socials__link" href=""><img src="img/icon-youtube.svg" width="17" height="14"
+      <a class="socials__link" href=""><img class="socials__icon" src="img/icon-youtube.svg" width="19.91" height="14"
           alt="Наш канал в Youtube"></a>
     </section>
 
     <section class="page-footer__dev dev">
       <p class="dev__text text">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="dev__logo-htmlacademy"><img
-          src="img/logo-htmlacademy.svg" alt="Логотип htmlacademy"></a>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="dev__logo-htmlacademy">
+        Логотип htmlacademy</a>
     </section>
 
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

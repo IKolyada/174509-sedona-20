@@ -1,16 +1,38 @@
 .legend {
   font-family: var(--primary-font);
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
+  border-top: 1px solid var(--medium-gray);
+  padding: 16px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    border-top: none;
+    padding: 16px 0 0 0;
+    font-size: 21px;
   }
 }
 
 .legend_separator {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      display: inline-block;
+      background-color: var(--medium-gray);
+      margin-right: 65px;
+    }
+  }
 }

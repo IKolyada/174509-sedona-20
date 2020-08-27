@@ -1,6 +1,19 @@
+.page-content {
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 102px;
+  }
+}
+
 .page-content__title {
   text-align: center;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
   max-width: 520px;
   padding: 0 17px;
 }
@@ -12,18 +25,14 @@
   padding: 0 17px;
 }
 
-.page-content__container {
-  padding-bottom: 16px;
-}
-
 .page-content__form {
-  margin: 0 20px;
+  margin-top: 16px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 60px;
+    margin: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 120px;
+    margin: 56px 120px 66px 120px;
   }
 }

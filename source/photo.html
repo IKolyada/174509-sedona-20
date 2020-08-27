@@ -13,13 +13,12 @@
   <header class="page-header page__wrapper">
     <nav class="main-nav">
       <div class="main-nav__inner">
-        <button type="button" class="main-nav__close visually-hidden">Закрыть</button>
         <ul class="main-nav__list menu">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="photo.html">Фото и видео</a>
+          <li class="menu__item menu__item_separator">
+            <a class="menu__link menu__link_current" href="photo.html">Фото и видео</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Форма Отзыва</a>
@@ -32,8 +31,10 @@
       <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
       </a>
-      <div class="main-nav__button-box">
-        <button type="button" class="main-nav__show-menu" aria-label="Открыть меню"></button>
+      <div class="main-nav__holder">
+        <div class="main-nav__burger-wrap">
+          <button type="button" class="main-nav__burger" aria-label="Открыть меню"></button>
+        </div>
       </div>
     </nav>
     <section class="page-header__hero hero hero_inner-page">
@@ -49,68 +50,68 @@
       политике и экономике.</p>
 
     <section class="gallery">
+      <div class="gallery__photo-wrap  gallery__title-photo">
+        <figure class="gallery__photo photo">
+          <picture>
+            <source media="(min-width: 770px)" srcset="img/photo-sunset-desktop@1x.jpg">
+            <source media="(min-width: 400px)" srcset="img/photo-sunset-tablet@1x.jpg">
+            <img class="picture" src="img/photo-sunset-mobile@1x.jpg" alt="Закат в Седоне">
+          </picture>
 
-      <figure class="gallery__photo photo_big photo">
-        <picture>
-          <source media="(min-width: 769px)" srcset="img/photo-sunset-desktop@1x.jpg">
-          <source media="(min-width: 320px)" srcset="img/photo-sunset-tablet@1x.jpg">
-          <img class="picture" src="img/photo-sunset-mobile@1x.jpg" alt="Закат в Седоне">
-        </picture>
-
-        <figcaption class="photo__caption">
-          <div class="photo__description">
-            <p class="photo__title">Неродные просторы</p>
-            <p class="photo__author">Автор фото: Борис</p>
-          </div>
-          <button type="button" class="photo__like">1350</button>
-        </figcaption>
-      </figure>
-
-      <figure class="gallery__photo photo">
-        <picture>
-          <source media="(min-width: 512px)" srcset="img/photo-cactus-desktop@1x.jpg">
-          <source media="(min-width: 320px)" srcset="img/photo-cactus-tablet@1x.jpg">
-          <img class="picture" src="img/photo-cactus-mobile@1x.jpg" alt="Растения Седоны">
-        </picture>
-        <figcaption class="photo__caption">
-          <div class="photo__description">
-            <p class="photo__title">Местная растительность</p>
-            <p class="photo__author">Автор фото: Сергей</p>
-          </div>
-          <button type="button" class="photo__like">145</button>
-        </figcaption>
-      </figure>
-
-      <figure class="gallery__photo photo">
-        <picture>
-          <source media="(min-width: 512px)" srcset="img/photo-roads-desktop@1x.jpg">
-          <source media="(min-width: 320px)" srcset="img/photo-roads-tablet@1x.jpg">
-          <img class="picture" src="img/photo-roads-mobile@1x.jpg" alt="Пейзаж Седоны">
-        </picture>
-        <figcaption class="photo__caption">
-          <div class="photo__description">
-            <p class="photo__title">Дорога на север</p>
-            <p class="photo__author">Автор фото: Петр</p>
-          </div>
-          <button type="button" class="photo__like">96</button>
-        </figcaption>
-      </figure>
-
-      <figure class="gallery__photo photo">
-        <picture>
-          <source media="(min-width: 512px)" srcset="img/photo-bridge-desktop@1x.jpg">
-          <source media="(min-width: 320px)" srcset="img/photo-bridge-tablet@1x.jpg">
-          <img class="picture" src="img/photo-bridge-mobile@1x.jpg" alt="Пейзаж Седоны">
-        </picture>
-        <figcaption class="photo__caption">
-          <div class="photo__description">
-            <p class="photo__title">Мост дьявола</p>
-            <p class="photo__author">Автор фото: Антон</p>
-          </div>
-          <button type="button" class="photo__like">254</button>
-        </figcaption>
-      </figure>
-
+          <figcaption class="photo__caption">
+            <div class="photo__description">
+              <p class="photo__title">Неродные просторы</p>
+              <p class="photo__author">Автор фото: Борис</p>
+            </div>
+            <button type="button" class="photo__like">1350</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="gallery__photo-wrap">
+        <figure class="gallery__photo photo">
+          <picture>
+            <source media="(min-width: 400px)" srcset="img/photo-cactus-desktop@1x.jpg">
+            <img class="picture" src="img/photo-cactus-mobile@1x.jpg" alt="Растения Седоны">
+          </picture>
+          <figcaption class="photo__caption">
+            <div class="photo__description">
+              <p class="photo__title">Местная растительность</p>
+              <p class="photo__author">Автор фото: Сергей</p>
+            </div>
+            <button type="button" class="photo__like">145</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="gallery__photo-wrap">
+        <figure class="gallery__photo photo">
+          <picture>
+            <source media="(min-width: 400px)" srcset="img/photo-roads-desktop@1x.jpg">
+            <img class="picture" src="img/photo-roads-mobile@1x.jpg" alt="Пейзаж Седоны">
+          </picture>
+          <figcaption class="photo__caption">
+            <div class="photo__description">
+              <p class="photo__title">Дорога на север</p>
+              <p class="photo__author">Автор фото: Петр</p>
+            </div>
+            <button type="button" class="photo__like">96</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="gallery__photo-wrap">
+        <figure class="gallery__photo photo">
+          <picture>
+            <source media="(min-width: 400px)" srcset="img/photo-bridge-desktop@1x.jpg">
+            <img class="picture" src="img/photo-bridge-mobile@1x.jpg" alt="Пейзаж Седоны">
+          </picture>
+          <figcaption class="photo__caption">
+            <div class="photo__description">
+              <p class="photo__title">Мост дьявола</p>
+              <p class="photo__author">Автор фото: Антон</p>
+            </div>
+            <button type="button" class="photo__like">254</button>
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="video">
@@ -121,18 +122,18 @@
 
       <div class="video-player">
         <picture>
-          <source media="(min-width: 512px)" srcset="img/video-desktop@1x.jpg">
+          <source media="(min-width: 770px)" srcset="img/video-desktop@1x.jpg">
           <source media="(min-width: 320px)" srcset="img/video-tablet@1x.jpg">
           <img class="picture" src="img/video-mobile@1x.jpg" alt="Картинка-заглушка для видео">
         </picture>
         <div class="video-player__controls">
-          <button type="button" class="video-player__restart"></button>
+          <button type="button" class="video-player__restart video-player__control"></button>
           <div class="video-player__timeline-wrap">
-            <div class="video-player__timeline"></div>
             <button type="button" class="video-player__toggle"></button>
+            <div class="video-player__timeline"></div>
           </div>
-          <button type="button" class="video-player__subtitles"></button>
-          <button type="button" class="video-player__fullscrin"></button>
+          <button type="button" class="video-player__subtitles video-player__control"></button>
+          <button type="button" class="video-player__fullscrin video-player__control"></button>
         </div>
       </div>
 
@@ -145,22 +146,22 @@
     <p class="page-footer__cta cta">#visitSEDONA</p>
 
     <section class="page-footer__socials socials">
-      <a class="socials__link" href=""><img src="img/icon-twitter.svg" width="17" height="14"
+      <a class="socials__link" href=""><img class="socials__icon" src="img/icon-twitter.svg" width="17.5" height="14.57"
           alt="Наша страница в Twitter"></a>
-      <a class="socials__link" href=""><img src="img/icon-facebook.svg" width="17" height="14"
+      <a class="socials__link" href=""><img class="socials__icon" src="img/icon-facebook.svg" width="8.7" height="18.9"
           alt="Наша страница в Facebook"></a>
-      <a class="socials__link" href=""><img src="img/icon-youtube.svg" width="17" height="14"
+      <a class="socials__link" href=""><img class="socials__icon" src="img/icon-youtube.svg" width="19.91" height="14"
           alt="Наш канал в Youtube"></a>
     </section>
 
     <section class="page-footer__dev dev">
       <p class="dev__text text">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="dev__logo-htmlacademy"><img
-          src="img/logo-htmlacademy.svg" alt="Логотип htmlacademy"></a>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="dev__logo-htmlacademy">
+        Логотип htmlacademy</a>
     </section>
 
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

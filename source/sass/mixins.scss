@@ -3,3 +3,7 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin custom-outline {
+  box-shadow: 0 0 0 1px var(--primary-black);
+}
