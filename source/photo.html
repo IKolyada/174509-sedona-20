@@ -39,14 +39,14 @@
     </nav>
     <section class="page-header__hero hero hero_inner-page">
       <h1 class="visually-hidden">Лучшие фотографии и видео из Седоны</h1>
-      <img src="img/text-sedona.svg" width="460" height="350" alt="Добро пожаловать в Седону">
+      <img class="hero__image" src="img/text-sedona.svg" width="460" height="350" alt="Добро пожаловать в Седону">
     </section>
   </header>
 
-  <main class="page-content page__wrapper">
+  <main class="page-content page__wrapper page-content_photo">
 
     <p class="page-content__title title title_big">Фото и видео</p>
-    <p class="page-content__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+    <p class="page-content__text text text_inner">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
       политике и экономике.</p>
 
     <section class="gallery">
@@ -70,7 +70,8 @@
       <div class="gallery__photo-wrap">
         <figure class="gallery__photo photo">
           <picture>
-            <source media="(min-width: 400px)" srcset="img/photo-cactus-desktop@1x.jpg">
+            <source media="(min-width: 769px)" srcset="img/photo-cactus-desktop@1x.jpg">
+              <source media="(min-width: 400px)" srcset="img/photo-cactus-tablet@1x.jpg">
             <img class="picture" src="img/photo-cactus-mobile@1x.jpg" alt="Растения Седоны">
           </picture>
           <figcaption class="photo__caption">
@@ -78,14 +79,15 @@
               <p class="photo__title">Местная растительность</p>
               <p class="photo__author">Автор фото: Сергей</p>
             </div>
-            <button type="button" class="photo__like">145</button>
+            <button type="button" class="photo__like">143</button>
           </figcaption>
         </figure>
       </div>
       <div class="gallery__photo-wrap">
         <figure class="gallery__photo photo">
           <picture>
-            <source media="(min-width: 400px)" srcset="img/photo-roads-desktop@1x.jpg">
+            <source media="(min-width: 769px)" srcset="img/photo-roads-desktop@1x.jpg">
+            <source media="(min-width: 400px)" srcset="img/photo-roads-tablet@1x.jpg">
             <img class="picture" src="img/photo-roads-mobile@1x.jpg" alt="Пейзаж Седоны">
           </picture>
           <figcaption class="photo__caption">
@@ -100,7 +102,8 @@
       <div class="gallery__photo-wrap">
         <figure class="gallery__photo photo">
           <picture>
-            <source media="(min-width: 400px)" srcset="img/photo-bridge-desktop@1x.jpg">
+            <source media="(min-width: 769px)" srcset="img/photo-bridge-desktop@1x.jpg">
+            <source media="(min-width: 400px)" srcset="img/photo-bridge-tablet@1x.jpg">
             <img class="picture" src="img/photo-bridge-mobile@1x.jpg" alt="Пейзаж Седоны">
           </picture>
           <figcaption class="photo__caption">
@@ -117,13 +120,13 @@
     <section class="video">
 
       <p class="video__title title">Все еще сомневаетесь?</p>
-      <p class="video__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+      <p class="video__text text text_inner">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
         раз!</p>
 
       <div class="video-player">
         <picture>
           <source media="(min-width: 770px)" srcset="img/video-desktop@1x.jpg">
-          <source media="(min-width: 320px)" srcset="img/video-tablet@1x.jpg">
+          <source media="(min-width: 321px)" srcset="img/video-tablet@1x.jpg">
           <img class="picture" src="img/video-mobile@1x.jpg" alt="Картинка-заглушка для видео">
         </picture>
         <div class="video-player__controls">

@@ -22,7 +22,7 @@
 
 .photo__caption {
   @media (min-width: $tablet-width) {
-    padding: 22px 20px 15px 20px;
+    padding: 17px 20px 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +55,7 @@
   &::before {
     content: url("../img/icon-like.svg");
     opacity: 0.3;
-    margin-right: 14px;
+    margin-right: 15px;
 
     @media (min-width: $desktop-width) {
       opacity: 1;

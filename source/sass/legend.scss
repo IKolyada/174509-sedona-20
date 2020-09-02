@@ -7,7 +7,7 @@
   text-align: center;
   width: 100%;
   border-top: 1px solid var(--medium-gray);
-  padding: 16px 20px 0 20px;
+  padding: 21px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -32,7 +32,77 @@
       width: 100%;
       display: inline-block;
       background-color: var(--medium-gray);
+    }
+
+    &::before {
       margin-right: 65px;
     }
+
+    &::after {
+      margin-left: 65px;
+    }
+  }
+}
+
+.legend_name {
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-bottom: 45px;
+  }
+}
+
+.legend_contact {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+    padding-top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+    padding-top: 17px;
+  }
+}
+
+.legend_impression {
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 76px;
+  }
+}
+
+.legend_sightseenig {
+  padding-top: 16px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-bottom: 42px;
+  }
+}
+
+.legend_feedback {
+  margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
   }
 }

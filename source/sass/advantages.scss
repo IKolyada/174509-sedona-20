@@ -1,19 +1,26 @@
 .advantages {
-  margin-top: 32px;
+  margin-top: 34px;
   display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
   }
 }
 
 .advantages__img-city {
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 2;
     grid-column-end: -1;
     margin-bottom: 0;
+    height: 256px;
+    object-fit: contain;
   }
 }
 
@@ -22,9 +29,23 @@
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
+    height: 256px;
+    object-fit: contain;
   }
 }
 
 .advantages__card {
   margin: 0;
+}
+
+.advantages__picture_city {
+  @media (min-width: $desktop-width) {
+    object-position: 0 -69px;
+  }
+}
+
+.advantages__picture_bridge {
+  @media (min-width: $desktop-width) {
+    object-position: 0 -14px;
+  }
 }

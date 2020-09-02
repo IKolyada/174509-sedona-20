@@ -2,14 +2,14 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: var(--primary-blue);
   background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   padding: 90px 19px 85px 19px;
-  clip-path: polygon(0 0, 100% 0, 100% 93.57%, 50% 100%, 0 93.57%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 98.5%, 0 92%);
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 481px, 95.5% 485px, 95.5% 462px, 50% 100%, 32px 462px, 32px 485px, 0 481px);
+    padding-top: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,17 +19,26 @@
 }
 
 .hero_inner-page {
-  padding: 55px 19px;
+  padding-top: 52px;
+  padding-bottom: 62px;
   clip-path: polygon(0 0, 100% 0, 100% 133px, 50% 100%, 0 133px);
+  background-position: -223px -230px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 90px;
-    padding-bottom: 105px;
-    background-position: center 70%;
+    padding-top: 94px;
+    padding-bottom: 112px;
+    padding-right: 14px;
+    background-position: center 100%;
     clip-path: polygon(0 0, 100% 0, 100% 254px, 95.5% 258px, 95.5% 234px, 50% 100%, 4.5% 234px, 4.5% 258px, 0 254px);
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 117px;
     clip-path: polygon(0 0, 100% 0, 100% 244px, 951px 267px, 951px 244px, 50% 100%, 249px 244px, 249px 267px, 0 244px);
   }
+}
+
+.hero__image {
+  max-width: 81%;
 }

@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 58px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .find-hotel__title {
@@ -12,6 +16,23 @@
 }
 
 .find-hotel__text {
-  margin: 34px auto;
+  margin: 22px auto 27px auto;
   max-width: 458px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 34px auto 37px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 34px auto 42px auto;
+  }
+}
+
+.find-hotel__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

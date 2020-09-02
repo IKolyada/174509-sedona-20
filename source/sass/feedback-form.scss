@@ -1,7 +1,7 @@
 .feedback-form {
   @media (min-width: $tablet-width) {
     display: grid;
-    row-gap: 50px;
+    row-gap: 17px;
     grid-template-areas: "expression name"
       "contact contact"
       "sightseeing sightseeing"
@@ -17,14 +17,22 @@
   @media (min-width: $tablet-width) {
     display: block;
     text-align: right;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 
 .feedback-form__button {
   margin-left: 20px;
   margin-right: 20px;
+  grid-area: button;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    min-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 456px;
   }
 }
