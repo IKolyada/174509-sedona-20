@@ -34,6 +34,10 @@
   clip-path: polygon(0 0, 100% 0, 100% 133px, 50% 100%, 0 133px);
   background-position: -223px -230px;
 
+  @media (min-width: 321px) and (max-width: 767px) {
+    background-position: 0 center;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 94px;
     padding-bottom: 112px;
