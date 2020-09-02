@@ -6,10 +6,20 @@
   padding: 90px 19px 85px 19px;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 98.5%, 0 92%);
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 321px) and (max-width: 490px) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 98.5%, 0 92%);
+  }
+
+  @media (min-width: 491px) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     clip-path: polygon(0 0, 100% 0, 100% 481px, 95.5% 485px, 95.5% 462px, 50% 100%, 32px 462px, 32px 485px, 0 481px);
     padding-top: 77px;
+  }
+
+  @media (min-width: 769px) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 481px, 95.5% 485px, 95.5% 462px, 50% 100%, 4.5% 462px, 4.5% 485px, 0 481px);
   }
 
   @media (min-width: $desktop-width) {
