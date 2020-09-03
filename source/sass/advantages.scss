@@ -13,8 +13,10 @@
 }
 
 .advantages__img {
-  height: 256px;
-  object-fit: contain;
+  @media (min-width: $tablet-width) {
+    height: 256px;
+    object-fit: contain;
+  }
 }
 
 .advantages__img-city {
