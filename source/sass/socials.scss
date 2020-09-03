@@ -1,15 +1,22 @@
 .socials {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 11px;
+  }
 }
 
 .socials__link {
   width: 46px;
   height: 48px;
   background-color: var(--primary-blue);
-  margin-left: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:not(:first-child) {
+    margin-left: 7px;
+  }
 
   &:hover {
     background-color: var(--medium-dark-blue);

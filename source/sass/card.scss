@@ -5,33 +5,52 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 30px;
+  padding-top: 19px;
 
   &:last-child {
-    padding-bottom: 26px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 256px;
-    justify-content: center;
+    padding-top: 44px;
   }
 }
 
 .card__text {
   margin: 0;
+  margin-bottom: 7px;
+  line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .card__text_feature {
   margin-left: 49px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 23px 0;
+  }
+}
+
+.card__br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
 .card__text_separator {
   border-bottom: 1px solid var(--primary-gray);
-  padding-bottom: 32px;
+  padding-bottom: 24px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -40,43 +59,65 @@
 
 .card__number {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 
   &::before,
   &::after {
     content: "—";
     margin: 0 3px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .card_sight {
   background-color: var(--primary-blue);
-  padding: 32px 17px;
+  padding: 32px 14px;
 
   &:first-child {
-    clip-path: polygon(0 0, 50% 25px, 100% 0, 100% 100%, 0 100%);
-    padding-top: 57px;
+    clip-path: polygon(0 0, 50% 16px, 100% 0, 100% 100%, 0 100%);
+    padding-top: 51px;
   }
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding: 40px 32px;
+    padding: 37px 32px;
 
     &:first-child {
       clip-path: none;
-      padding-top: 40px;
+      padding-top: 41px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 84px;
+
+    &:first-child {
+      padding: 49px 56px;
+    }
+  }
+}
+
+.card_sight-bridge {
+  padding-bottom: 26px;
 }
 
 .card_feature {
   text-align: left;
   background-color: var(--primary-white);
-  padding: 0 17px 32px 17px;
+  padding: 0 22px 8px 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px;
+    padding: 35px 32px;
+    padding-top: 58px;
     text-align: center;
+    justify-content: start;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 46px;
   }
 }
 
@@ -87,18 +128,41 @@
 }
 
 .card_feature-food {
+  margin-top: 8px;
+  padding-left: 19px;
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     grid-column-start: 2;
     grid-row-start: 2;
+    margin: 0;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 46px;
   }
 }
 
 .card__title {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 36px 12px 36px;
+  }
+}
+
+.card__title_bridge {
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+    margin-right: 22px;
+  }
 }
 
 .card__title-feature {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 
@@ -111,10 +175,11 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    margin: 0;
 
     &::before {
       margin-right: 0;
-      margin-bottom: 27px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -127,43 +192,84 @@
   &::before {
     background-image: url("../img/icon-house.svg");
     width: 39px;
-    height: 36px;
+    height: 46px;
   }
 
   @media (min-width: $tablet-width) {
     &::before {
       width: 72px;
-      height: 72px;
+      height: 78px;
     }
   }
 }
 
 .card__title-feature_souvenir {
+  margin-bottom: 0;
+
   &::before {
     background-image: url("../img/icon-gift.svg");
     width: 32px;
-    height: 38px;
+    height: 52px;
+    margin-right: 13px;
+    margin-left: 2px;
   }
 
   @media (min-width: $tablet-width) {
     &::before {
       width: 76px;
-      height: 72px;
+      height: 78px;
+      margin-right: 0;
+      margin-left: 0;
+      background-position-x: 5px;
     }
   }
 }
 
 .card__title-feature_food {
+  margin-bottom: 11px;
+
   &::before {
     background-image: url("../img/icon-burger.svg");
     width: 40px;
-    height: 34px;
+    height: 35px;
+    margin-right: 10px;
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+
     &::before {
-      width: 66px;
-      height: 72px;
+      width: 76px;
+      height: 78px;
+      margin-right: 0;
+      background-position-y: 5px;
     }
+  }
+}
+
+.card__text_wrap {
+  margin: 0 12px;
+}
+
+.card__text_narrow {
+  @media (min-width: $tablet-width) {
+    margin: 0 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 42px;
+  }
+}
+
+.card__text_feature-burger {
+  @media (min-width: $tablet-width) {
+    margin: 22px 6px;
+  }
+}
+
+.card_wrap {
+  @media (min-width: $tablet-width) {
+    margin-left: 44px;
+    margin-right: 44px;
   }
 }

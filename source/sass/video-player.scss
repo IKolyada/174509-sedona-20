@@ -14,8 +14,8 @@
 
 .video-player__controls {
   width: 87%;
-  margin: -43px 20px 0 20px;
-  height: 109px;
+  margin: -45px 20px 0 20px;
+  height: 111px;
   background: linear-gradient(to top, var(--light-gray) 66px, var(--black-opacity-06) 20px);
   padding: 22px;
   display: flex;
@@ -33,6 +33,8 @@
     height: 93px;
     flex-wrap: nowrap;
     align-items: center;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 
@@ -57,8 +59,10 @@
 
 .video-player__toggle {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  top: 1px;
+  left: 34px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background-color: var(--primary-white);
   border: none;
@@ -117,5 +121,10 @@
   mask-position: right;
   width: 29px;
   height: 20px;
-  margin-left: 31px;
+  margin-left: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 32px;
+    margin-right: 6px;
+  }
 }

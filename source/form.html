@@ -39,14 +39,14 @@
     </nav>
     <section class="page-header__hero hero hero_inner-page">
       <h1 class="visually-hidden">Отзывы о посещении Седоны</h1>
-      <img src="img/text-sedona.svg" width="460" height="350" alt="Добро пожаловать в Седону">
+      <img class="hero__image" src="img/text-sedona.svg" width="460" height="350" alt="Добро пожаловать в Седону">
     </section>
   </header>
 
-  <main class="page-content page__wrapper">
+  <main class="page-content page__wrapper page-content_feedback">
 
     <p class="page-content__title title title_big">Оставьте свой отзыв</p>
-    <p class="page-content__text text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о
+    <p class="page-content__text text text_inner">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о
       посещенных
       вами достопримечательностях</p>
 
@@ -54,7 +54,7 @@
 
       <fieldset class="feedback-form__fieldset fieldset fieldset_name">
 
-        <legend class="fieldset__legend legend">Представьтесь:</legend>
+        <legend class="fieldset__legend legend legend_name">Представьтесь:</legend>
 
         <ul class="fieldset__list">
           <li class="fieldset__item-name">
@@ -76,7 +76,7 @@
 
       <fieldset class="feedback-form__fieldset fieldset fieldset_contact">
 
-        <legend class="fieldset__legend legend legend_separator">Контактная&nbsp;информация:</legend>
+        <legend class="fieldset__legend legend legend_separator legend_contact">Контактная&nbsp;информация:</legend>
 
         <ul class="fieldset__list fieldset__list_contact">
           <li class="fieldset__item-contact">
@@ -99,7 +99,7 @@
 
       <fieldset class="feedback-form__fieldset fieldset fieldset_impression">
 
-        <legend class="fieldset__legend legend">Ваше общее впечатление:</legend>
+        <legend class="fieldset__legend legend legend_impression">Ваше общее впечатление:</legend>
 
         <ul class="fieldset__list fieldset__list_impression">
           <li class="fieldset__item-impression">
@@ -120,7 +120,7 @@
 
       <fieldset class="feedback-form__fieldset fieldset fieldset_sightseeing">
 
-        <legend class="fieldset__legend legend legend_separator">Посещенные достопримечательности:</legend>
+        <legend class="fieldset__legend legend legend_separator legend_sightseenig">Посещенные достопримечательности:</legend>
         <ul class="fieldset__list fieldset__list_sightseeing">
           <li class="fieldset__item fieldset__item_sightseeing">
             <input class="visually-hidden fieldset__input-checkbox" type="checkbox" name="devil-bridge"
@@ -146,7 +146,7 @@
 
       <fieldset class="feedback-form__fieldset fieldset fieldset_feedback">
 
-        <legend class="fieldset__legend legend legend_separator">Опишите&nbsp;свои&nbsp;эмоции:</legend>
+        <legend class="fieldset__legend legend legend_separator legend_feedback">Опишите&nbsp;свои&nbsp;эмоции:</legend>
         <ul class="fieldset__list">
           <li class="fieldset__item">
             <label class="visually-hidden" for="message">Напишите здесь ваш отзыв в свободной форме</label>
@@ -155,8 +155,8 @@
           </li>
           <ul>
       </fieldset>
-      <div class="feedback-form__button button_feedback">
-        <button class="button cta" type="submit">отправить отзыв</button>
+      <div class="feedback-form__button">
+        <button class="button cta button_feedback" type="submit">отправить отзыв</button>
       </div>
       <p class="feedback-form__prompt text">* — обязательные поля</p>
     </form>

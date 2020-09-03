@@ -1,21 +1,51 @@
 .page-content {
-  margin-top: 32px;
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 58px;
+  }
+}
+
+.page-content_photo {
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 102px;
+    margin-top: 101px;
   }
 }
+
+.page-content_feedback {
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 114px;
+  }
+}
+
 
 .page-content__title {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 40px;
-  max-width: 520px;
+  margin-bottom: 28px;
+  max-width: 300px;
   padding: 0 17px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+    margin-bottom: 32px;
+  }
 }
 
 .page-content__text {
@@ -23,16 +53,21 @@
   margin: 0 auto;
   max-width: 520px;
   padding: 0 17px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 480px;
+  }
 }
 
 .page-content__form {
-  margin-top: 16px;
+  margin-top: 15px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
-    margin: 60px;
+    margin: 87px 60px 65px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 56px 120px 66px 120px;
+    margin: 58px 120px 70px 120px;
   }
 }

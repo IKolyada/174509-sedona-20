@@ -21,9 +21,26 @@
   }
 }
 
-.title_br {
+.title_wrap {
   @media (min-width: $tablet-width) {
     max-width: 155px;
     margin: 0 auto;
+  }
+}
+
+.title_area {
+  margin-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.title_tourist {
+  margin-top: 3px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }

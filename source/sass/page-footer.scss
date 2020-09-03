@@ -2,20 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 38px 0 25px 0;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px 60px;
+    padding: 21px 60px 0 60px;
+    align-items: baseline;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 36px 120px;
+  @media (min-width: $desktop-width) {
+    padding: 21px 120px;
+    padding-bottom: 0;
   }
 }
 
 .page-footer__socials {
-  margin-top: 33px;
-  margin-bottom: 40px;
+  margin-top: 11px;
+  margin-bottom: 30px;
 }

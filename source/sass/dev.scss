@@ -13,6 +13,7 @@
   background-color: var(--primary-black);
   mask-image: url("../img/logo-htmlacademy.svg");
   color: transparent;
+  mask-repeat: no-repeat;
 
   &:hover {
     background-color: var(--primary-blue);
@@ -20,5 +21,9 @@
 
   &:active {
     background-color: var(--black-opacity-03);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
   }
 }

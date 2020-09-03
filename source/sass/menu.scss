@@ -23,8 +23,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 153px;
+  min-width: 152px;
   padding-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (max-width: 767px) {
     &:not(:first-child) {
@@ -93,5 +97,10 @@
 .menu__item_separator {
   @media (min-width: $tablet-width) {
     margin-right: auto;
+    min-width: 158px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 239px;
   }
 }

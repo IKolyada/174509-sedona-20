@@ -26,13 +26,15 @@
 }
 
 .button_feedback {
-  grid-area: button;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
-    max-width: 324px;
+    padding-top: 9px;
+    padding-left: 0;
+    padding-right: 10px;
   }
 
-  @media (min-width: $desktop-width) {
-    max-width: 480px;
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
   }
 }
