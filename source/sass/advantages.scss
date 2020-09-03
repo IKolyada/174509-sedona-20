@@ -12,6 +12,11 @@
   }
 }
 
+.advantages__img {
+  height: 256px;
+  object-fit: contain;
+}
+
 .advantages__img-city {
   margin-bottom: 26px;
 
@@ -19,8 +24,6 @@
     grid-column-start: 2;
     grid-column-end: -1;
     margin-bottom: 0;
-    height: 256px;
-    object-fit: contain;
   }
 }
 
@@ -29,8 +32,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
-    height: 256px;
-    object-fit: contain;
   }
 }
 
