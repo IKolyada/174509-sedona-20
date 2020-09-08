@@ -5,6 +5,28 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const csso = require("gulp-csso");
+const rename = require("gulp-rename");
+const imagemin = require("gulp-imagemin");
+const terser = require("gulp-terser");
+const del = require("del");
+
+const copy = () => {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+};
+
+exports.copy = copy;
+
+const clean = () => {
+  return del("build");
+};
 
 // Styles
 
@@ -16,19 +38,46 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+const scripts = () => {
+  return gulp.src("js/script.js")
+    .pipe(terser())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
+
+// Images
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.svgo()
+    ]))
+}
+
+exports.images = images;
 
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -49,3 +98,13 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+const build = () => gulp.series(
+  "clean",
+  "copy",
+  "styles",
+  "html"
+);
+
+gulp.task("build", gulp.series("styles", "html"));
+gulp.task("start", gulp.series("build", "server"));
