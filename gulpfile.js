@@ -28,6 +28,8 @@ const clean = () => {
   return del("build");
 };
 
+exports.clean = clean;
+
 // Styles
 
 const styles = () => {
