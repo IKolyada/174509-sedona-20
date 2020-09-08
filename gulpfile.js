@@ -59,6 +59,13 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
+const html = () => {
+  return gulp.src("source/**/*.html", {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
+};
+
 // Images
 
 const images = () => {
@@ -99,12 +106,12 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-const build = () => gulp.series(
-  "clean",
-  "copy",
-  "styles",
-  "html"
+const build = gulp.series(
+  clean,
+  copy,
+  styles,
+  html,
 );
 
-gulp.task("build", gulp.series("styles", "html"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("build", gulp.series(build));
+gulp.task("start", gulp.series(build, server));
