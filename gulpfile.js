@@ -53,12 +53,12 @@ const styles = () => {
 exports.styles = styles;
 
 const scripts = () => {
-  return gulp.src("js/script.js")
+  return gulp.src("source/js/menu.js")
     .pipe(terser())
     .pipe(rename({
       suffix: ".min"
     }))
-    .pipe(gulp.dest("js"))
+    .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
 
@@ -66,14 +66,9 @@ exports.scripts = scripts;
 
 const html = () => {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 };
-
-/*const html = () => {
-  return gulp.src(“source/*.html”)
-    .pipe(gulp.dest(“./build”))
-    .pipe(sync.stream());
-}*/
 
 // Images
 
@@ -139,7 +134,8 @@ const build = gulp.series(
   html,
   images,
   sprite,
-  webp
+  webp,
+  scripts
 );
 
 gulp.task("build", gulp.series(build));
