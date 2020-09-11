@@ -42,6 +42,14 @@
 .card__br {
   display: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.card__br_souvenir {
+  display: none;
+
   @media (min-width: $desktop-width) {
     display: block;
   }
@@ -110,13 +118,13 @@
   padding: 0 22px 8px 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 35px 32px;
+    padding: 36px 32px;
     padding-top: 58px;
     text-align: center;
     justify-content: start;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 56px 46px;
   }
 }

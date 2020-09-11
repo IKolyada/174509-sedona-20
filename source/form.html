@@ -32,6 +32,11 @@
       </div>
       <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+        </picture>
       </a>
       <div class="main-nav__holder">
         <div class="main-nav__burger-wrap">
@@ -48,7 +53,7 @@
   <main class="page-content page__wrapper page-content_feedback">
 
     <p class="page-content__title title title_big">Оставьте свой отзыв</p>
-    <p class="page-content__text text text_inner">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о
+    <p class="page-content__text page-content__text_inner text text_inner">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о
       посещенных
       вами достопримечательностях</p>
 
@@ -155,7 +160,7 @@
             <textarea class="form-text fieldset__input fieldset__input_feedback" name="message" id="message"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </li>
-          <ul>
+        </ul>
       </fieldset>
       <div class="feedback-form__button">
         <button class="button cta button_feedback" type="submit">отправить отзыв</button>

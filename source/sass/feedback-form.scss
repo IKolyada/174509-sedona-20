@@ -2,12 +2,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     row-gap: 17px;
-    grid-template-areas: "expression name"
+    grid-template-areas: "impression name"
       "contact contact"
       "sightseeing sightseeing"
       "feedback feedback"
       "button prompt";
   }
+  grid-template-columns: 50% 50%;
 }
 
 .feedback-form__prompt {

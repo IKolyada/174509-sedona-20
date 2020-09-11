@@ -53,7 +53,9 @@
   margin: 0 auto;
   max-width: 520px;
   padding: 0 17px;
+}
 
+.page-content__text_inner {
   @media (min-width: $tablet-width) {
     max-width: 480px;
   }

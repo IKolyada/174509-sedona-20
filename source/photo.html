@@ -32,6 +32,11 @@
       </div>
       <a href="index.html" class="main-nav__logo logo">
         Логотип Седона
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+        </picture>
       </a>
       <div class="main-nav__holder">
         <div class="main-nav__burger-wrap">
@@ -48,7 +53,7 @@
   <main class="page-content page__wrapper page-content_photo">
 
     <p class="page-content__title title title_big">Фото и видео</p>
-    <p class="page-content__text text text_inner">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+    <p class="page-content__text page-content__text_inner text text_inner">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
       забыть о
       политике и экономике.</p>
 
@@ -161,9 +166,9 @@
 
       <div class="video-player">
         <picture>
-          <source type="image/webp" media="(min-width: 770px)"
+          <source type="image/webp" media="(min-width: 1200px)"
             srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 770px)"
+          <source type="image/webp" media="(min-width: 768px)"
             srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
           <source media="(min-width: 770px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">

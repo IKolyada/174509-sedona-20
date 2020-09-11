@@ -109,11 +109,11 @@
   @media (min-width: $tablet-width) {
     grid-area: name;
     width: auto;
-    margin-left: 110px;
+    margin-left: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 131px;
+    margin-left: 80px;
   }
 }
 
@@ -130,9 +130,9 @@
   }
 }
 
-.fieldset_expression {
+.fieldset_impression {
   @media (min-width: $tablet-width) {
-    grid-area: expression;
+    grid-area: impression;
     display: flex;
     flex-direction: column;
   }
@@ -171,6 +171,12 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.fieldset__list_impression {
+  @media (min-width: $tablet-width) {
+    border-right: 1px solid var(--medium-gray);
   }
 }
 
@@ -262,7 +268,7 @@
   }
 }
 
-.fieldset__input-radio:checked ~ .fieldset__radio {
+.fieldset__input-radio:checked~.fieldset__radio {
   &::before {
     content: "";
     border: 18px solid var(--light-gray);
@@ -270,13 +276,13 @@
   }
 }
 
-.fieldset__input-radio:checked:hover ~ .fieldset__radio {
+.fieldset__input-radio:checked:hover~.fieldset__radio {
   &::before {
     border: 18px solid var(--medium-gray);
   }
 }
 
-.fieldset__input-radio:checked:active ~ .fieldset__radio {
+.fieldset__input-radio:checked:active~.fieldset__radio {
   &::before {
     border: 18px solid var(--dark-gray);
     background-color: var(--additional-gray);
@@ -321,7 +327,7 @@
   }
 }
 
-.fieldset__input-checkbox:checked ~ .fieldset__checkbox {
+.fieldset__input-checkbox:checked~.fieldset__checkbox {
   &::after {
     content: url("../img/icon-tick.svg");
     display: flex;
@@ -335,7 +341,7 @@
   }
 }
 
-.fieldset__input-checkbox:checked:active ~ .fieldset__checkbox {
+.fieldset__input-checkbox:checked:active~.fieldset__checkbox {
   &::after {
     content: url("../img/icon-tick.svg");
     opacity: 0.3;

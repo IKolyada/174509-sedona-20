@@ -85,14 +85,6 @@
   position: relative;
   margin: 0 auto;
 
-  &::before {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
   }

@@ -4,11 +4,11 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 52px;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 42px;
+    margin-top: 40px;
   }
 }
 
